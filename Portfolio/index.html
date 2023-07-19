@@ -15,13 +15,13 @@
     <!--header-->
     <header>
       <div class="logo"><span>I</span>zan.</div>
-      <ul class="navlist">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="navlist open">
+        <li><a href="#home" style="--i: 1">Home</a></li>
+        <li><a href="#about" style="--i: 2">About</a></li>
+        <li><a href="#services" style="--i: 3">Services</a></li>
+        <li><a href="#skills" style="--i: 4">Skills</a></li>
+        <li><a href="#portfolio" style="--i: 5">Portfolio</a></li>
+        <li><a href="#contact" style="--i: 6">Contact</a></li>
       </ul>
       <div id="menu-icon" class="bx bx-menu"></div>
     </header>
@@ -53,7 +53,7 @@
         </div>
         <div class="btn-box">
           <a href="Resume.pdf" target="_blank" class="btn">Download CV</a>
-          <a href="#" class="btn">Hire Me Now!</a>
+          <a href="#contact" class="btn">Hire Me Now!</a>
         </div>
         <div class="social-icon">
           <a href="https://www.facebook.com/izanahmad8/"
@@ -70,7 +70,7 @@
           ></a>
         </div>
       </div>
-      <div class="home-image">
+      <div class="home-image scroll-scale">
         <div class="img-box">
           <img src="izan.png" alt="" />
         </div>
@@ -128,7 +128,7 @@
     </section>
     <!--about section-->
     <section id="about" class="about">
-      <div class="img-about">
+      <div class="img-about scroll-scale">
         <img src="izan1.png" alt="" />
         <div class="info-about1">
           <span>5+</span>
@@ -139,7 +139,7 @@
           <p>DSA Problem Solve</p>
         </div>
       </div>
-      <div class="about-content">
+      <div class="about-content scroll-scale">
         <span>Let me Introduce myself</span>
         <h2>About Me</h2>
         <p>
@@ -154,7 +154,7 @@
     </section>
     <!--services section-->
     <section id="services" class="services">
-      <div class="main-text">
+      <div class="main-text scroll-scale">
         <span>What I will do for you</span>
         <h2>My Services</h2>
       </div>
@@ -199,12 +199,12 @@
     </section>
     <!--skill section-->
     <section id="skills" class="skills">
-      <div class="main-text">
+      <div class="main-text scroll-scale">
         <span>Technical and Professional</span>
         <h2>My Skills</h2>
       </div>
       <div class="skill-main">
-        <div class="skill-left">
+        <div class="skill-left scroll-scale">
           <h3>Technical skills</h3>
           <div class="skill-bar">
             <div class="info">
@@ -261,7 +261,7 @@
             </div>
           </div>
         </div>
-        <div class="skill-right">
+        <div class="skill-right scroll-scale">
           <h3>Professional skills</h3>
           <div class="skill-bar">
             <div class="info">
@@ -304,17 +304,17 @@
     </section>
     <!--portfolio section-->
     <section id="portfolio" class="portfolio">
-      <div class="main-text">
+      <div class="main-text scroll-scale">
         <span>What I will do for you</span>
         <h2>Latest Projects</h2>
       </div>
       <div class="container">
-        <div class="filter-buttons">
-          <button class="btn" data-filter="all">All</button>
-          <button class="btn" data-filter=".website">Website</button>
-          <button class="btn" data-filter=".software">Software</button>
+        <div class="filter-buttons scroll-scale">
+          <button class="button" data-filter="all">All</button>
+          <button class="button" data-filter=".website">Website</button>
+          <button class="button" data-filter=".software">Software</button>
         </div>
-        <div class="portfolio-gallary">
+        <div class="portfolio-gallary scroll-bottom">
           <div class="port-box mix website">
             <div class="port-image">
               <img src="todo.png" alt="" />
@@ -325,7 +325,9 @@
                 To Do is a task management app to help you stay organized and
                 manage your day-to-day.
               </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
+              <a href="https://todo-app-izan.netlify.app/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
           </div>
           <div class="port-box mix website">
@@ -338,7 +340,9 @@
                 The quiz application will contain questions followed by a total
                 score shown at the end of the quiz.
               </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
+              <a href="https://quiz-app-izan.netlify.app/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
           </div>
           <div class="port-box mix website">
@@ -352,7 +356,9 @@
                 features: Local weather, weather map (weather map service) and
                 weather widgets.
               </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
+              <a href="https://weather-app-izan.netlify.app/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
           </div>
           <div class="port-box mix website">
@@ -365,7 +371,11 @@
                 Generate strong & secure passwords for all your online accounts
                 with our random password generator.
               </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
+              <a
+                href="https://password-generator-izan.netlify.app/"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
           </div>
           <div class="port-box mix software">
@@ -391,7 +401,11 @@
                 Countdown Timer is the app for you. Very easy to use and
                 configure.
               </p>
-              <a href="#"><i class="bx bx-link-external"></i></a>
+              <a
+                href="https://countdown-timer-izan.netlify.app/"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -399,11 +413,11 @@
     </section>
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <div class="main-text">
+      <div class="main-text scroll-scale">
         <span>ask me a question</span>
         <h2>Contact Me</h2>
       </div>
-      <form action="#" name="submit-to-google-sheet">
+      <form action="#" name="submit-to-google-sheet" class="scroll-bottom">
         <input type="text" name="Name" placeholder="Your Name" required />
         <input type="text" name="Email" placeholder="Your Email" required />
         <input type="text" name="Address" placeholder="Your Address" required />
@@ -428,7 +442,9 @@
     </section>
     <!--footer-->
     <footer>
-      <p>Copyright &copy; 2023 by Izan Ahmad || All Rights Reserved</p>
+      <p class="scroll-scale">
+        Copyright &copy; 2023 by Izan Ahmad || All Rights Reserved
+      </p>
       <a href="#home" class="bx bx-up-arrow-alt"></a>
     </footer>
     <script src="mixitup.min.js"></script>

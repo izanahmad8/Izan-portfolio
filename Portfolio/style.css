@@ -84,6 +84,22 @@ span {
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 20px;
+    animation: slideAnimation 1s ease forwards;
+    display: inline-block;
+    animation-delay: calc(.3s * var(--i));
+    opacity: 0;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .navlist a:hover {
@@ -228,7 +244,7 @@ section {
     width: 0;
     height: 100%;
     z-index: -1;
-    transform: .4s;
+    transition: .4s;
 }
 
 .btn:hover::before {
@@ -290,7 +306,7 @@ section {
     width: 0;
     height: 100%;
     z-index: -1;
-    transform: .4s;
+    transition: .4s;
 }
 
 .social-icon a:hover::before {
@@ -721,7 +737,7 @@ section {
     text-align: center;
 }
 
-.filter-buttons .btn {
+.filter-buttons .button {
     background: none;
     outline: none;
     border: none;
@@ -733,7 +749,7 @@ section {
     margin-left: 1.3rem;
 }
 
-.filter-buttons .btn:hover {
+.filter-buttons .button:hover {
     color: var(--hover-color);
 }
 
@@ -926,7 +942,7 @@ footer a i {
         transition: all .4s ease;
     }
 
-    #menu-icon .bx-x {
+    #menu-icon.bx-x {
         transform: rotate(-180deg);
     }
 
@@ -949,7 +965,7 @@ footer a i {
         font-size: 1rem;
     }
 
-    .navlist .open {
+    .navlist.open {
         top: 100%;
     }
 
@@ -969,6 +985,10 @@ footer a i {
 
     .about {
         flex-direction: column-reverse;
+    }
+
+    .img-about {
+        margin-left: 60px;
     }
 
     .skill-main {
@@ -1015,7 +1035,7 @@ footer a i {
         font-size: .6rem;
     }
 
-    .filter-buttons .btn {
+    .filter-buttons .button {
         font-size: .8rem;
     }
 
@@ -1029,15 +1049,23 @@ footer a i {
 }
 
 .scroll-scale {
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(.9);
     transition: all 2s;
 }
 
-/*.scroll-bottom {
+.scroll-bottom {
     opacity: 0;
     transform: translateY(300px);
-    transition: 3s;
-}*/
+    transition: 2s;
+}
+
+.scroll-top {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 2s;
+}
+
 
 .show-items {
     opacity: 1;

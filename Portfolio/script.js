@@ -58,7 +58,7 @@ let navList = document.querySelector(".navlist");
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x");
-    navList.classList.toggle("open");
+    navList.classList.toggle("open");;
 }
 
 window.onscroll = () => {
@@ -68,7 +68,7 @@ window.onscroll = () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entries.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add("show-items");
         }
         else {
