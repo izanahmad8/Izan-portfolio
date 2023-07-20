@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.top {
+    font-size: 20px;
+    padding: 20px 70px;
+    color: white;
+    cursor: pointer;
+}
+
+.top span {
+    margin: 0px 10px;
+}
+
+.main {
+    width: 100%;
+    height: 70px;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-family: normal;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo i {
+    color: #e84393;
+    padding: 0px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    transition: 0.4s;
+}
+
+.menu a:last-child {
+    background: #e84393;
+    border-radius: 8px;
+}
+
+.menu a:hover:last-child {
+    background: transparent;
+    color: black;
+    border: 1px solid gray;
+}
+
+.menu a:hover {
+    background: #e84393;
+    border-radius: 8px;
+}
+
+.box {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    background: white;
+    top: 25%;
+    right: 5%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+form input[type="text"],
+input[type="email"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
+    background: #e84393;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: transparent;
+    color: black;
+    border: 1px solid gray;
+}
+
+p {
+    font-size: 15px;
+}
+
+p a {
+    text-decoration: none;
+    color: #e84393;
+}
+
+.htext {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    max-width: 600px;
+}
+
+.htext h1 {
+    font-size: 2em;
+}
+
+.htext h2 {
+    font-size: 4em;
+}
+
+.htext span {
+    color: #e84393;
+}
+
+.htext a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.htext a:hover {
+    background: #e84393;
+}
+
+.htext p {
+    margin: 15px 0px;
+    line-height: 2em;
+}
